@@ -141,6 +141,20 @@ body {
 
 // MY CODE STARTS HERE
 
+//VARIABLES
+@body-bg: #aacfd0;
+@footer-bg: #696969;
+@h3-font: 2.5rem;
+@div-bg: #e0e0e0;
+@border-color: 1px solid rgba(232, 231, 231, 1);
+@white: white;
+
+//MIXINS
+.display() {
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   font-size: 62.5%;
   .container {
@@ -152,8 +166,7 @@ html {
 } //html
 
 header {
-  display: flex;
-  flex-direction: column;
+  .display();
   width: 90%;
   margin: 0 auto;
 
@@ -173,10 +186,9 @@ header {
   }
 
   .top-header {
-    display: flex;
-    flex-direction: column;
+    .display();
     padding: 4rem 3rem;
-    background: #b0c4de;
+    background: @body-bg;
 
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -197,14 +209,14 @@ header {
     .underline {
       width: 99.5%;
       align-self: center;
-      border-bottom: 2px solid black;
+      border-bottom: @border-color;
       margin-top: 2rem;
     }
   }
 
   .bottom-header {
     padding: 3rem 3rem;
-    background: #b0c4de;
+    background: @body-bg;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-bottom: 2rem;
@@ -212,8 +224,8 @@ header {
     button {
       padding: 1rem 2rem;
       border: 0;
-      color: white;
-      background: #696969;
+      color: @white;
+      background: @footer-bg;
       font-weight: bold;
       font-size: 1.6rem;
       border-radius: 0.5rem;
@@ -236,36 +248,36 @@ section {
 
       h2 {
         font-size: 4rem;
+        margin-bottom: 1.5rem;
       }
       h3 {
-        font-size: 2.5rem;
+        font-size: @h3-font;
         margin-bottom: 1rem;
       }
     }
     .top-section-left {
-      display: flex;
-      flex-direction: column;
-      h2 {
-        margin-bottom: 1.5rem;
+      .display();
+
+      p {
+        line-height: 2.4rem;
       }
     }
     .top-section-right-div {
       width: 100%;
-      border: 1px solid black;
+      border: @border-color;
       padding: 1.2rem;
     }
   }
   .bottom-section {
-    display: flex;
-    flex-direction: column;
+    .display();
 
     h3 {
-      font-size: 2.5rem;
+      font-size: @h3-font;
     }
     div {
       display: flex;
       padding: 1rem 0;
-      border-top: 1px solid black;
+      border-top: @border-color;
 
       span {
         width: 25%;
@@ -274,11 +286,11 @@ section {
     }
     .table-head {
       font-weight: bold;
-      border-top: 1px solid black;
+      border-top: @border-color;
       margin-top: 1rem;
     }
     .dark-bg {
-      background: lightgray;
+      background: @div-bg;
     }
   }
 } //section
@@ -287,7 +299,7 @@ footer {
   width: 95%;
   margin: 3rem auto 0 auto;
   text-align: center;
-  color: white;
-  background: #696969;
+  color: @white;
+  background: @footer-bg;
   padding: 3rem;
 } //footer

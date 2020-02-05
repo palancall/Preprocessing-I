@@ -166,7 +166,7 @@ header .top-header {
   display: flex;
   flex-direction: column;
   padding: 4rem 3rem;
-  background: #b0c4de;
+  background: #aacfd0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -184,12 +184,12 @@ header .top-header p {
 header .top-header .underline {
   width: 99.5%;
   align-self: center;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid #e8e7e7;
   margin-top: 2rem;
 }
 header .bottom-header {
   padding: 3rem 3rem;
-  background: #b0c4de;
+  background: #aacfd0;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-bottom: 2rem;
@@ -219,6 +219,7 @@ section .top-section .top-section-div {
 }
 section .top-section .top-section-div h2 {
   font-size: 4rem;
+  margin-bottom: 1.5rem;
 }
 section .top-section .top-section-div h3 {
   font-size: 2.5rem;
@@ -228,12 +229,12 @@ section .top-section .top-section-left {
   display: flex;
   flex-direction: column;
 }
-section .top-section .top-section-left h2 {
-  margin-bottom: 1.5rem;
+section .top-section .top-section-left p {
+  line-height: 2.4rem;
 }
 section .top-section .top-section-right-div {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #e8e7e7;
   padding: 1.2rem;
 }
 section .bottom-section {
@@ -246,7 +247,7 @@ section .bottom-section h3 {
 section .bottom-section div {
   display: flex;
   padding: 1rem 0;
-  border-top: 1px solid black;
+  border-top: 1px solid #e8e7e7;
 }
 section .bottom-section div span {
   width: 25%;
@@ -254,11 +255,11 @@ section .bottom-section div span {
 }
 section .bottom-section .table-head {
   font-weight: bold;
-  border-top: 1px solid black;
+  border-top: 1px solid #e8e7e7;
   margin-top: 1rem;
 }
 section .bottom-section .dark-bg {
-  background: lightgray;
+  background: #e0e0e0;
 }
 footer {
   width: 95%;
