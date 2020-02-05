@@ -143,58 +143,69 @@ html .container {
   margin: 0 auto;
   font-family: "Nunito", sans-serif;
 }
-header {
+html .container header {
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
 }
-header nav {
+html .container header nav {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: flex-end;
+  padding: 0;
 }
-header nav a {
+html .container header nav a {
   text-decoration: none;
   font-size: 2rem;
-  margin: 0 1.5rem;
+  margin: 0 0 0 1.5rem;
   padding: 2rem 0 2rem 2rem;
   color: black;
 }
-header .top-header {
+html .container header .top-header {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding: 4rem 3rem;
   background: #aacfd0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
-header .top-header img {
-  height: 400px;
-  width: 450px;
+html .container header .top-header img {
+  height: 30%;
+  width: 45%;
+  margin-top: 4rem;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
 }
-header .top-header h1 {
+html .container header .top-header h1 {
   font-size: 7rem;
   padding: 2rem 0;
 }
-header .top-header p {
+html .container header .top-header p {
   font-size: 2rem;
 }
-header .top-header .underline {
+html .container header .top-header .underline {
   width: 99.5%;
   align-self: center;
   border-bottom: 1px solid #e8e7e7;
   margin-top: 2rem;
 }
-header .bottom-header {
+html .container header .bottom-header {
   padding: 3rem 3rem;
   background: #aacfd0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-bottom: 2rem;
 }
-header .bottom-header button {
+html .container header .bottom-header button {
   padding: 1rem 2rem;
   border: 0;
   color: white;
@@ -205,63 +216,63 @@ header .bottom-header button {
   margin: 2rem 0;
   outline: none;
 }
-section {
+html .container section {
   width: 90%;
   margin: 0 auto;
 }
-section .top-section {
+html .container section .top-section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5rem;
 }
-section .top-section .top-section-div {
+html .container section .top-section .top-section-div {
   width: 48%;
 }
-section .top-section .top-section-div h2 {
+html .container section .top-section .top-section-div h2 {
   font-size: 4rem;
   margin-bottom: 1.5rem;
 }
-section .top-section .top-section-div h3 {
+html .container section .top-section .top-section-div h3 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-section .top-section .top-section-left {
+html .container section .top-section .top-section-left {
   display: flex;
   flex-direction: column;
 }
-section .top-section .top-section-left p {
+html .container section .top-section .top-section-left p {
   line-height: 2.4rem;
 }
-section .top-section .top-section-right-div {
+html .container section .top-section .top-section-right-div {
   width: 100%;
   border: 1px solid #e8e7e7;
   padding: 1.2rem;
 }
-section .bottom-section {
+html .container section .bottom-section {
   display: flex;
   flex-direction: column;
 }
-section .bottom-section h3 {
+html .container section .bottom-section h3 {
   font-size: 2.5rem;
 }
-section .bottom-section div {
+html .container section .bottom-section div {
   display: flex;
   padding: 1rem 0;
   border-top: 1px solid #e8e7e7;
 }
-section .bottom-section div span {
+html .container section .bottom-section div span {
   width: 25%;
   padding-left: 2rem;
 }
-section .bottom-section .table-head {
+html .container section .bottom-section .table-head {
   font-weight: bold;
   border-top: 1px solid #e8e7e7;
   margin-top: 1rem;
 }
-section .bottom-section .dark-bg {
+html .container section .bottom-section .dark-bg {
   background: #e0e0e0;
 }
-footer {
+html .container footer {
   width: 95%;
   margin: 3rem auto 0 auto;
   text-align: center;
