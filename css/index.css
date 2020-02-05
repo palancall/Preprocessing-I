@@ -137,10 +137,11 @@ body {
 html {
   font-size: 62.5%;
 }
-.container {
+html .container {
   font-size: 1.6rem;
   width: 70%;
   margin: 0 auto;
+  font-family: "Nunito", sans-serif;
 }
 header {
   display: flex;
@@ -162,9 +163,10 @@ header nav a {
   color: black;
 }
 header .top-header {
+  display: flex;
+  flex-direction: column;
   padding: 4rem 3rem;
   background: #b0c4de;
-  border-bottom: 2px solid black;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -176,11 +178,32 @@ header .top-header h1 {
   font-size: 7rem;
   padding: 2rem 0;
 }
+header .top-header p {
+  font-size: 2rem;
+}
+header .top-header .underline {
+  width: 99.5%;
+  align-self: center;
+  border-bottom: 2px solid black;
+  margin-top: 2rem;
+}
 header .bottom-header {
   padding: 3rem 3rem;
   background: #b0c4de;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  margin-bottom: 2rem;
+}
+header .bottom-header button {
+  padding: 1rem 2rem;
+  border: 0;
+  color: white;
+  background: #696969;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  outline: none;
 }
 section {
   width: 90%;
@@ -188,6 +211,8 @@ section {
 }
 section .top-section {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
 }
 section .top-section .top-section-div {
   width: 48%;
@@ -197,10 +222,47 @@ section .top-section .top-section-div h2 {
 }
 section .top-section .top-section-div h3 {
   font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+section .top-section .top-section-left {
+  display: flex;
+  flex-direction: column;
+}
+section .top-section .top-section-left h2 {
+  margin-bottom: 1.5rem;
+}
+section .top-section .top-section-right-div {
+  width: 100%;
+  border: 1px solid black;
+  padding: 1.2rem;
+}
+section .bottom-section {
+  display: flex;
+  flex-direction: column;
+}
+section .bottom-section h3 {
+  font-size: 2.5rem;
+}
+section .bottom-section div {
+  display: flex;
+  padding: 1rem 0;
+  border-top: 1px solid black;
+}
+section .bottom-section div span {
+  width: 25%;
+  padding-left: 2rem;
+}
+section .bottom-section .table-head {
+  font-weight: bold;
+  border-top: 1px solid black;
+  margin-top: 1rem;
+}
+section .bottom-section .dark-bg {
+  background: lightgray;
 }
 footer {
   width: 95%;
-  margin: 0 auto;
+  margin: 3rem auto 0 auto;
   text-align: center;
   color: white;
   background: #696969;

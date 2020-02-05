@@ -143,13 +143,13 @@ body {
 
 html {
   font-size: 62.5%;
-}
-
-.container {
-  font-size: 1.6rem;
-  width: 70%;
-  margin: 0 auto;
-}
+  .container {
+    font-size: 1.6rem;
+    width: 70%;
+    margin: 0 auto;
+    font-family: "Nunito", sans-serif;
+  }
+} //html
 
 header {
   display: flex;
@@ -173,9 +173,11 @@ header {
   }
 
   .top-header {
+    display: flex;
+    flex-direction: column;
     padding: 4rem 3rem;
     background: #b0c4de;
-    border-bottom: 2px solid black;
+
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 
@@ -188,6 +190,16 @@ header {
       font-size: 7rem;
       padding: 2rem 0;
     }
+    p {
+      font-size: 2rem;
+    }
+
+    .underline {
+      width: 99.5%;
+      align-self: center;
+      border-bottom: 2px solid black;
+      margin-top: 2rem;
+    }
   }
 
   .bottom-header {
@@ -195,8 +207,21 @@ header {
     background: #b0c4de;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    margin-bottom: 2rem;
+
+    button {
+      padding: 1rem 2rem;
+      border: 0;
+      color: white;
+      background: #696969;
+      font-weight: bold;
+      font-size: 1.6rem;
+      border-radius: 0.5rem;
+      margin: 2rem 0;
+      outline: none;
+    }
   }
-}
+} //header
 
 section {
   width: 90%;
@@ -204,6 +229,8 @@ section {
 
   .top-section {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
     .top-section-div {
       width: 48%;
 
@@ -212,16 +239,55 @@ section {
       }
       h3 {
         font-size: 2.5rem;
+        margin-bottom: 1rem;
       }
     }
+    .top-section-left {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        margin-bottom: 1.5rem;
+      }
+    }
+    .top-section-right-div {
+      width: 100%;
+      border: 1px solid black;
+      padding: 1.2rem;
+    }
   }
-}
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-size: 2.5rem;
+    }
+    div {
+      display: flex;
+      padding: 1rem 0;
+      border-top: 1px solid black;
+
+      span {
+        width: 25%;
+        padding-left: 2rem;
+      }
+    }
+    .table-head {
+      font-weight: bold;
+      border-top: 1px solid black;
+      margin-top: 1rem;
+    }
+    .dark-bg {
+      background: lightgray;
+    }
+  }
+} //section
 
 footer {
   width: 95%;
-  margin: 0 auto;
+  margin: 3rem auto 0 auto;
   text-align: center;
   color: white;
   background: #696969;
   padding: 3rem;
-}
+} //footer
